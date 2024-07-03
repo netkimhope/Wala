@@ -1,0 +1,23 @@
+[
+  {
+    "masterKey": {
+      "admin": [
+        "100027399343135"
+      ],
+      "devMode": false,
+      "database": false,
+      "restartTime": 99999
+    },
+    "fcaOption": {
+      "forceLogin": true,
+      "listenEvents": true,
+      "logLevel": "silent",
+      "updatePresence": false,
+      "selfListen": false,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+      "online": true,
+      "autoMarkDelivery": false,
+      "autoMarkRead": false
+    }
+  }
+]
