@@ -2,7 +2,7 @@ module.exports.config = {
   name: 'help',
   version: '1.0.0',
   role: 0,
-  aliases: ['info', 'menu'],
+  aliases: ['cmd', 'menu'],
   usage: '[command]',
   info: "Beginner's guide",
   credits: 'Developer',
@@ -18,8 +18,12 @@ module.exports.run = async function ({ api, event, Utils, prefix, args, chat, fo
     const totalCommands = allCommands.length;
 
     if (!input) {
-      let helpMessage = `📋 | CMDS List: 〔${prefix || 'no prefix'}〕\n`;
-      helpMessage += `Total Commands: ${totalCommands}🏷️\n\n`;
+      let helpMessage = `♡   ∩_∩
+     („• ֊ •„)♡
+┏━━━━━∪∪━━━━━━━━┓
+♡   𝑨𝒗𝒂𝒊𝒍𝒂𝒃𝒍𝒆 𝑪𝒐𝒎𝒎𝒂𝒏𝒅𝒔  ♡ 
+┗━━━━━━━━━━━━━━━┛ 〔${prefix || 'no prefix'}〕\n`;
+      helpMessage += `Total Commands: ${totalCommands}\n\n`;
 
       const firstPageCommands = allCommands.slice(0, perPage);
       firstPageCommands.forEach((command, index) => {
@@ -31,8 +35,12 @@ module.exports.run = async function ({ api, event, Utils, prefix, args, chat, fo
      // helpMessage += `To see another page, use '${prefix || ''}help [page-number]'\n`;
       chat.reply(tin(helpMessage));
     } else if (input === 'all') {
-      let helpMessage = `📋 | CMDS List: 〔${prefix || 'no prefix'}〕\n`;
-      helpMessage += `Total Commands: ${totalCommands}🏷️\n\n`;
+      let helpMessage = `♡   ∩_∩
+     („• ֊ •„)♡
+┏━━━━━∪∪━━━━━━━━┓
+♡   𝑨𝒗𝒂𝒊𝒍𝒂𝒃𝒍𝒆 𝑪𝒐𝒎𝒎𝒂𝒏𝒅𝒔  ♡ 
+┗━━━━━━━━━━━━━━━┛ 〔${prefix || 'no prefix'}〕\n`;
+      helpMessage += `Total Commands: ${totalCommands}\n\n`;
 
       allCommands.forEach((command, index) => {
         const { name, info, usage } = command;
@@ -53,8 +61,12 @@ module.exports.run = async function ({ api, event, Utils, prefix, args, chat, fo
       const endIndex = Math.min(startIndex + perPage, totalCommands);
       const commandsOnPage = allCommands.slice(startIndex, endIndex);
 
-      let helpMessage = `📋 | CMDS List: Page ${page}/${totalPages}\n`;
-      helpMessage += `Total Commands: ${totalCommands}🏷️\n\n`;
+      let helpMessage = `♡   ∩_∩
+     („• ֊ •„)♡
+┏━━━━━∪∪━━━━━━━━┓
+♡   𝑨𝒗𝒂𝒊𝒍𝒂𝒃𝒍𝒆 𝑪𝒐𝒎𝒎𝒂𝒏𝒅𝒔  ♡ 
+┗━━━━━━━━━━━━━━━┛ page ${page}/${totalPages}\n`;
+      helpMessage += `Total Commands: ${totalCommands}\n\n`;
 
       commandsOnPage.forEach((command, index) => {
         const { name, info, usage } = command;

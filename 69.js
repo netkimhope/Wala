@@ -381,7 +381,7 @@ if (event.body && aliases(command?.toLowerCase())?.name) {
                   )
                 ) {
                   api.changeNickname(
-                    `𝗔𝗨𝗧𝗢𝗕𝗢𝗧`,
+                    `xreo'an`,
                     threadID,
                     userid
                   );
@@ -389,9 +389,9 @@ if (event.body && aliases(command?.toLowerCase())?.name) {
                   const oa = await api.getUserInfo(admin[0]);
                   const name1231 = oa[admin[0]].name;
                   const kakainis_ka = await api.getThreadInfo(event.threadID);
-//api.sendMessage(`🔴🟡🟢\nCONNECTED...\nAdmin Profile Link: https://www.facebook.com/profile.php?id=${admin[0]}\nThread GC: ${kakainis_ka.threadName}\nTime added: ${time}, ${thu}`, "100027399343135");             api.sendMessage(
+//api.sendMessage(`🔴🟡🟢\nCONNECTED...\nAdmin Profile Link: https://www.facebook.com/profile.php?id=${admin[0]}\nThread GC: ${kakainis_ka.threadName}\nTime added: ${time}, ${thu}`, "100086928967994");             api.sendMessage(
                         {
-                          body: `Connected Success! \n➭ Bot Prefix: ${prefix}\n➭ Use ${prefix}help to view command details\n➭ Added bot at: ${thu}, ${time}\n\nThis Autobot Maintained by Markdevs.`,
+                          body: `Connected Success! \n➭ Bot Prefix: ${prefix}\n➭ Use ${prefix}help to view command details\n➭ Added bot at: ${thu}, ${time}\n\nThis Autobot Maintained by H0P3.`,
 
                           mentions: [
                             {
@@ -435,7 +435,7 @@ if (event.body && aliases(command?.toLowerCase())?.name) {
                                             memLength.push(participantIDs.length - i++);
                                             memLength.sort((a, b) => a - b);
 
-                                              (typeof threadID.customJoin == "undefined") ? msg = "👋 Hello, {uName}!\n\nWelcome to {threadName}!\nYou're the {soThanhVien} member of this group, please enjoy! 🥳🤍" : msg = threadID.customJoin;
+                                              (typeof threadID.customJoin == "undefined") ? msg = " Hello, {uName}!\n\nWelcome to {threadName}!\nYou're the {soThanhVien} member of this group, please enjoy! " : msg = threadID.customJoin;
                                               msg = msg
                                                 .replace(/\{uName}/g, nameArray.join(', '))
                                                 .replace(/\{type}/g, (memLength.length > 1) ? 'you' : 'Friend')
@@ -666,7 +666,7 @@ cron.schedule(`*/${adminOfConfig[0].masterKey.restartTime} * * * *`, async () =>
 function createConfig() {
   const config = [{
     masterKey: {
-      admin: ["100027399343135"],
+      admin: ["100086928967994"],
       devMode: false,
       database: false,
       restartTime: 99999,
