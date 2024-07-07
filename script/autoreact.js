@@ -27,8 +27,8 @@ haha.includes("group") || haha.includes("kis") || haha.includes("kuta") || haha.
   if (haha.includes("❤️") || haha.includes("mwa") || haha.includes("💋") || haha.includes("pa kiss") || haha.includes("babe") || haha.includes("love") || haha.includes("hi") || haha.includes("oums") || haha.includes("uyab") || haha.includes("gf") || haha.includes("baby") || haha.includes("omg")){
     return            api.setMessageReaction("😘", event.messageID, (err) => {}, true)
   }
-  if (haha.includes("tite") || haha.includes("Tite")){
-    api.sendMessage("tite ka nang tite lika dito subuin moto.", event.threadID, event.messageID)
+  if (haha.includes("test") || haha.includes("Test")){
+    api.sendMessage("Hello master, I'm online na po pwede na ulit tayo mag kantotan.", event.threadID, event.messageID)
   }
   if (haha.includes("Umay") || haha.includes("umay")){
     api.sendMessage("Umay talaga wala kang tatay eh", event.threadID, event.messageID)
